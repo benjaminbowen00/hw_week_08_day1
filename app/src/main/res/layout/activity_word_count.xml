@@ -8,8 +8,8 @@
 
     <EditText
         android:id="@+id/input_string"
-        android:layout_width="271dp"
-        android:layout_height="150dp"
+        android:layout_width="257dp"
+        android:layout_height="50dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
@@ -22,8 +22,8 @@
 
     <TextView
         android:id="@+id/header"
-        android:layout_width="278dp"
-        android:layout_height="99dp"
+        android:layout_width="272dp"
+        android:layout_height="58dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
@@ -35,12 +35,16 @@
 
     <TextView
         android:id="@+id/output"
-        android:layout_width="242dp"
-        android:layout_height="152dp"
+        android:layout_width="311dp"
+        android:layout_height="319dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
+        android:paddingStart="0dp"
+        android:paddingTop="0dp"
         android:text="@string/output_info"
+        android:textAlignment="viewStart"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -55,7 +59,6 @@
         android:onClick="onCountButtonClicked"
         android:text="@string/convert_button"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.82"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/input_string" />
 </android.support.constraint.ConstraintLayout>

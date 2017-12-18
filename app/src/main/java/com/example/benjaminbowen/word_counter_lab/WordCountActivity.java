@@ -30,15 +30,16 @@ public class WordCountActivity extends AppCompatActivity {
     public void onCountButtonClicked(View button){
         InputMethodManager inputManager = (InputMethodManager)
                 getSystemService(Context.INPUT_METHOD_SERVICE);
-
         inputManager.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(),
                 InputMethodManager.HIDE_NOT_ALWAYS);
 
         String input = inputText.getText().toString();
-
         WordCount words = new WordCount(input);
 
-        outputText.setText("There are "+ words.getWordCount() + " words");
+
+        outputText.setText("There are "+ words.getWordCount() + " words\n\n"+"The number of occurences of each: \n" +words.prettyPrintArrayList());
+
+
 
     }
 
