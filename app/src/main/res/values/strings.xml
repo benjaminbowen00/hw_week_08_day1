@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Word Counter App</string>
+    <string name="header">This app will count the number of words in the phrase you enter.</string>
+    <string name="Instructions">Enter your text here</string>
+    <string name="convert_button">Count words</string>
+    <string name = "output_info">The results will appear here.</string>
+</resources>
